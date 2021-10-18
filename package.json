@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/ShiroeTalonLord/cmsc100Try-backend#readme",
   "dependencies": {
-    "fastify": "^3.22.0"
+    "ajv": "^8.6.3",
+    "fastify": "^3.22.0",
+    "fastify-openapi-glue": "^2.6.5",
+    "fastify-swagger": "^4.12.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
