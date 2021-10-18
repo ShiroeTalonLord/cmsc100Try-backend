@@ -5,7 +5,8 @@ const start = async () => {
   try {
     
     const app = await server();
-    await app.listen (8000)
+    await app.listen (8080)
+
   } catch (err) {
     app.log.error(err)
     process.exit(1)
