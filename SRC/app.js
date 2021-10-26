@@ -24,9 +24,9 @@ export async function server (options = { logger: true}){
   //app.get('/Micky', hehelols);
   
   const openApiOptions = {
-    specification
-    //service,
-    //noAdditional: true
+    specification,
+    service,
+    noAdditional: true
 
   };
   app.register(openApiGlue, openApiOptions);

@@ -22,7 +22,8 @@
     "ajv": "^8.6.3",
     "fastify": "^3.22.0",
     "fastify-openapi-glue": "^2.6.5",
-    "fastify-swagger": "^4.12.4"
+    "fastify-swagger": "^4.12.4",
+    "install": "^0.13.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
