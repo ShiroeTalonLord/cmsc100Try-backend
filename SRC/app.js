@@ -19,15 +19,13 @@ export async function server (options = { logger: true}){
   const app = fastify(options);
   const service = new Service();
   
-  //app.get('/', WARAFU);
-  //app.post('/', WARAFU);
-  //app.get('/Micky', hehelols);
-  
+  //app.get('/', WARAFU)
+  //app.post('/', hehelols)
+  //app.get('/trarar', WARAFU)
   const openApiOptions = {
     specification,
     service,
     noAdditional: true
-
   };
   app.register(openApiGlue, openApiOptions);
 
