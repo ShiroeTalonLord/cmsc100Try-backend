@@ -38,6 +38,33 @@ export const specification = {
     }
   },
   tags: [],
+  paths: {
+    '/': {
+      get: {
+        description: 'Returns home funciton',
+        operationId: 'home',
+
+        responses: {
+          200: {
+            description: 'returns hello world',
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  properties: {
+                    hello: {
+                      type: 'string',
+                      example: 'world'
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   externalDocs: {
     description: 'Find out more about Open API Spec',
     url: 'https://spec.openapis.org/oas/v3.1.0#schema'

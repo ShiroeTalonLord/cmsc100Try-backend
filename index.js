@@ -2,9 +2,10 @@ import { server } from './SRC/app.js';
 
 
 const start = async () => {
+  let app;
   try {
     
-    const app = await server();
+    app = await server({logger :true});
     await app.listen (8080)
 
   } catch (err) {
