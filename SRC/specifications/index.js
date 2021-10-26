@@ -37,13 +37,19 @@ export const specification = {
       url: 'https://spdx.org/licenses/Apache-2.0.html'
     }
   },
-  tags: [],
+  tags: [{
+    name: 'rarara',
+    description: 'EYYY BASTA ITO'
+  }
+  ],
   paths: {
     '/': {
       get: {
         description: 'Returns home funciton',
-        operationId: 'home',
-
+        operationId: 'hehelols',
+        tags: [
+          'rarara'
+        ],
         responses: {
           200: {
             description: 'returns hello world',
@@ -54,7 +60,7 @@ export const specification = {
                   properties: {
                     hello: {
                       type: 'string',
-                      example: 'world'
+                      example: 'yayaayaay'
                     }
                   }
                 }

@@ -5,7 +5,7 @@ const start = async () => {
   let app;
   try {
     
-    app = await server({logger :true});
+    const app = await server();
     await app.listen (8080)
 
   } catch (err) {
